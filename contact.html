@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: dodgerblue; }
+    header { background: brown; padding: 20px; text-align: center; color: whitesmoke; font-size: 22px; font-weight: bold; }
+    .container { background: brown; margin: 40px auto; padding: 40px; border-radius: 15px; box-shadow: 0 4px 8px black; width: 80%; color: whitesmoke; }
+    h2 { color: black; margin-bottom: 20px; text-align: center; }
+    label { display: block; margin: 10px 0 5px; color: whitesmoke; }
+    input, textarea { width: 100%; padding: 10px; border-radius: 8px; border: none; margin-bottom: 15px; }
+    button { padding: 12px 25px; background-color: dodgerblue; border: none; border-radius: 8px; color: white; font-size: 17px; cursor: pointer; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header>Contact Us</header>
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
+      <button type="button" onclick="window.location.href='dashboard.html'">Back</button>
+    </form>
+  </div>
+</body>
+</html>
